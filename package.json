@@ -1,0 +1,31 @@
+{
+  "name": "correios-services",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./bin/index.js",
+  "scripts": {
+    "dev": "nodemon ./bin/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/tchaguitos/correios-services.git"
+  },
+  "author": "Thiago Brasil <tchaguitos@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tchaguitos/correios-services/issues"
+  },
+  "homepage": "https://github.com/tchaguitos/correios-services#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "consign": "^0.1.6",
+    "cors": "^2.8.4",
+    "express": "^4.16.1",
+    "request-promise": "^4.2.2",
+    "xml2js": "^0.4.19"
+  },
+  "devDependencies": {
+    "nodemon": "^1.15.1"
+  }
+}
