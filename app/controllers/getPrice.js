@@ -2,7 +2,6 @@ const form = require('form-urlencoded');
 const request = require('request-promise');
 
 const parseResponse = require('../utils/parseResponse');
-const replaceBrackets = require('../utils/replaceBrackets');
 
 let getPriceController = {};
 
