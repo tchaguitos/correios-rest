@@ -22,6 +22,8 @@
     "consign": "^0.1.6",
     "cors": "^2.8.4",
     "express": "^4.16.1",
+    "form-urlencoded": "^2.0.4",
+    "request": "^2.83.0",
     "request-promise": "^4.2.2",
     "xml2js": "^0.4.19"
   },
