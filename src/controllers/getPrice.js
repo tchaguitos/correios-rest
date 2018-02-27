@@ -1,13 +1,11 @@
 const form = require('form-urlencoded');
 const request = require('request-promise');
-
 const parseResponse = require('../utils/parseResponse');
 
-let getPriceController = {};
+const getPriceController = {};
 
 getPriceController.getPrice = (req, res) => {
-  
-  let obj = {
+  const obj = {
     nCdEmpresa: req.body.nCdEmpresa,
     sDsSenha: req.body.sDsSenha,
     nCdServico: req.body.nCdServico,
@@ -21,18 +19,19 @@ getPriceController.getPrice = (req, res) => {
     nVlDiametro: req.body.nVlDiametro,
     sCdMaoPropria: req.body.sCdMaoPropria,
     nVlValorDeclarado: req.body.nVlValorDeclarado,
-    sCdAvisoRecebimento: req.body.sCdAvisoRecebimento
+    sCdAvisoRecebimento: req.body.sCdAvisoRecebimento,
   };
 
   const options = {
     url: 'http://ws.correios.com.br/calculador/CalcPrecoPrazo.asmx/CalcPreco',
-    form: form(obj)
-  };  
+    form: form(obj),
+  };
 
   request.post(options)
     .then(response => parseResponse(response))
     .then(response => res.json(response))
     .catch(err => err);
-}
+};
 
 module.exports = getPriceController;
+

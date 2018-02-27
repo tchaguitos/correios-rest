@@ -2,10 +2,10 @@
   "name": "correios-services",
   "version": "1.0.0",
   "description": "",
-  "main": "./bin/index.js",
+  "main": "./src/bin/index.js",
   "scripts": {
-    "dev": "nodemon ./bin/index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint": "./node_modules/.bin/eslint src/**/*.js",
+    "test": ""
   },
   "repository": {
     "type": "git",
@@ -28,6 +28,9 @@
     "xml2js": "^0.4.19"
   },
   "devDependencies": {
+    "eslint": "^4.18.1",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.9.0",
     "nodemon": "^1.15.1"
   }
 }
