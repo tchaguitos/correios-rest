@@ -1,17 +1,11 @@
 import { use, expect } from 'chai';
 import { describe, it } from 'mocha';
 
-import sinon from 'sinon';
-import sinonChai from 'sinon-chai';
-import sinonStubPromise from 'sinon-stub-promise';
-
 import dirtyChai from 'dirty-chai';
 
 import replaceBrackets from '../../../src/utils/replaceBrackets';
 
 use(dirtyChai);
-use(sinonChai);
-sinonStubPromise(sinon);
 
 describe('Replace brackets', () => {
   describe('smoke tests', () => {
