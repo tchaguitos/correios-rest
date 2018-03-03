@@ -1,12 +1,13 @@
 {
   "name": "correios-services",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "",
   "main": "./src/bin/index.js",
   "scripts": {
     "lint": "./node_modules/.bin/eslint src/**/*.js",
     "prepush": "npm run lint",
-    "test": ""
+    "test": "./node_modules/.bin/mocha test/**/*.spec.js --require babel-register",
+    "test:tdd": "./node_modules/.bin/mocha test/**/*.spec.js --require babel-register --watch"
   },
   "repository": {
     "type": "git",
@@ -18,6 +19,11 @@
     "url": "https://github.com/tchaguitos/correios-services/issues"
   },
   "homepage": "https://github.com/tchaguitos/correios-services#readme",
+  "babel": {
+    "presets": [
+      "env"
+    ]
+  },
   "dependencies": {
     "body-parser": "^1.18.2",
     "consign": "^0.1.6",
@@ -29,6 +35,8 @@
     "xml2js": "^0.4.19"
   },
   "devDependencies": {
+    "babel-preset-env": "^1.6.1",
+    "babel-register": "^6.26.0",
     "eslint": "^4.18.1",
     "eslint-config-airbnb-base": "^12.1.0",
     "eslint-plugin-import": "^2.9.0",
