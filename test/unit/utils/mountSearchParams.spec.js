@@ -1,3 +1,6 @@
+/* eslint-disable no-unused-expressions */
+/* eslint-disable no-unused-vars */
+
 import { use, expect } from 'chai';
 import { describe, it } from 'mocha';
 
@@ -7,7 +10,7 @@ import mountSearchParams from '../../../src/utils/mountSearchParams';
 
 use(dirtyChai);
 
-describe.only('Replace brackets', () => {
+describe('Replace brackets', () => {
   describe('smoke tests', () => {
     it('should be exist the mountSearchParams method', () => {
       expect(mountSearchParams).to.exist();
