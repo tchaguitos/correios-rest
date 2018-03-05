@@ -1,3 +1,6 @@
+/* eslint-disable no-unused-expressions */
+/* eslint-disable no-unused-vars */
+
 import { use, expect } from 'chai';
 import { describe, it } from 'mocha';
 
