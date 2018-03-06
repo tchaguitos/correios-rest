@@ -1,6 +1,6 @@
 const form = require('form-urlencoded');
 const request = require('request-promise');
-const parseResponse = require('../utils/parseResponse');
+const { parseResponse } = require('../utils');
 
 const getPriceController = {};
 
@@ -22,6 +22,7 @@ getPriceController.getPrice = (req, res) => {
     sCdAvisoRecebimento: req.body.sCdAvisoRecebimento,
   };
 
+  // res.json(parseResponse(request('http://ws.correios.com.br/calculador/CalcPrecoPrazo.asmx/CalcPreco', 'POST', mountSearchParams(obj))));
   const options = {
     url: 'http://ws.correios.com.br/calculador/CalcPrecoPrazo.asmx/CalcPreco',
     form: form(obj),
