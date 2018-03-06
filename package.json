@@ -8,7 +8,8 @@
     "prepush": "npm run lint",
     "test": "./node_modules/.bin/ava --require babel-register --require babel-polyfill --verbose --fail-fast",
     "test:unit": "./node_modules/.bin/ava --require babel-register --require babel-polyfill --verbose --fail-fast --watch 'test/unit/**/*.test.js'",
-    "test:functional": "./node_modules/.bin/ava --require babel-register --require babel-polyfill --verbose --fail-fast --watch 'test/functional/*.test.js'"
+    "test:functional": "./node_modules/.bin/ava --require babel-register --require babel-polyfill --verbose --fail-fast --watch 'test/functional/*.test.js'",
+    "test:coverage": "nyc npm run test"
   },
   "repository": {
     "type": "git",
