@@ -1,5 +1,7 @@
 # Correios Services
 
+[![Build Status](https://travis-ci.org/tchaguitos/correios-services.svg?branch=master)](https://travis-ci.org/tchaguitos/correios-services)
+
 Uma alternativa simples e fácil para calcular preços e prazos de encomendas dos Correios.  
 
 ### Motivação
