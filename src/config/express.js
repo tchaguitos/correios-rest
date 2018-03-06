@@ -11,8 +11,7 @@ module.exports = () => {
   app.use(bodyParser.urlencoded({ extended: true }));
   app.use(bodyParser.json());
 
-  consign({ cwd: 'src' })
-    .include('models')
+  consign({ cwd: 'src', verbose: false })
     .include('controllers')
     .then('routes')
 
