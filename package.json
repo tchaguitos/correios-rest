@@ -47,6 +47,7 @@
     "husky": "^0.15.0-rc.8",
     "nodemon": "^1.15.1",
     "sinon": "^4.4.2",
-    "sinon-stub-promise": "^4.0.0"
+    "sinon-stub-promise": "^4.0.0",
+    "supertest": "^3.0.0"
   }
 }
