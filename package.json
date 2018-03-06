@@ -46,6 +46,7 @@
     "eslint-plugin-import": "^2.9.0",
     "husky": "^0.15.0-rc.8",
     "nodemon": "^1.15.1",
+    "nyc": "^11.4.1",
     "sinon": "^4.4.2",
     "sinon-stub-promise": "^4.0.0",
     "supertest": "^3.0.0"
