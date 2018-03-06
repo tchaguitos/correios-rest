@@ -9,7 +9,8 @@
     "test": "./node_modules/.bin/ava --require babel-register --require babel-polyfill --verbose --fail-fast",
     "test:unit": "./node_modules/.bin/ava --require babel-register --require babel-polyfill --verbose --fail-fast --watch 'test/unit/**/*.test.js'",
     "test:functional": "./node_modules/.bin/ava --require babel-register --require babel-polyfill --verbose --fail-fast --watch 'test/functional/*.test.js'",
-    "test:coverage": "nyc npm run test"
+    "test:coverage": "nyc npm run test",
+    "coveralls": "npm run test:coverage && nyc report --reporter=text-lcov | coveralls"
   },
   "repository": {
     "type": "git",
@@ -42,6 +43,7 @@
     "babel-polyfill": "^6.26.0",
     "babel-preset-env": "^1.6.1",
     "babel-register": "^6.26.0",
+    "coveralls": "^3.0.0",
     "eslint": "^4.18.1",
     "eslint-config-airbnb-base": "^12.1.0",
     "eslint-plugin-import": "^2.9.0",
