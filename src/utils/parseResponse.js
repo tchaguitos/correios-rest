@@ -3,9 +3,9 @@ const replaceBrackets = require('./replaceBrackets');
 
 const parser = new xml2js.Parser();
 
-let response;
-
 const parseResponse = async (xml) => {
+  let response;
+
   await parser.parseString(xml, (err, result) => {
     if (err) return err;
 
