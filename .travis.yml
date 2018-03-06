@@ -1,6 +1,6 @@
 language: node_js
 node_js:
-  - "8.8.1"
+  - "9.6.1"
 cache:
   "node_modules"
 after_success:
