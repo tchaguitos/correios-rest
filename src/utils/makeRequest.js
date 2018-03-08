@@ -1,13 +1,12 @@
-const fetch = require('node-fetch');
+/* global fetch */
 
 const request = async (url, method, body) => {
   const options = {
-    url,
     method,
     body,
   };
 
-  await fetch(options)
+  await fetch(url, options)
     .then(res => res)
     .catch(err => err);
 };
