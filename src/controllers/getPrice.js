@@ -1,10 +1,8 @@
-const form = require('form-urlencoded');
-const request = require('request-promise');
-const { parseResponse } = require('../utils');
+const { makeRequest } = require('../utils');
 
 const getPriceController = {};
 
-getPriceController.getPrice = (req, res) => {
+getPriceController.getPrice = async (req, res) => {
   const obj = {
     nCdEmpresa: req.body.nCdEmpresa,
     sDsSenha: req.body.sDsSenha,
@@ -22,16 +20,9 @@ getPriceController.getPrice = (req, res) => {
     sCdAvisoRecebimento: req.body.sCdAvisoRecebimento,
   };
 
-  // res.json(parseResponse(request('http://ws.correios.com.br/calculador/CalcPrecoPrazo.asmx/CalcPreco', 'POST', mountSearchParams(obj))));
-  const options = {
-    url: 'http://ws.correios.com.br/calculador/CalcPrecoPrazo.asmx/CalcPreco',
-    form: form(obj),
-  };
+  const response = await makeRequest('http://ws.correios.com.br/calculador/CalcPrecoPrazo.asmx/CalcPreco', 'POST', obj);
 
-  request.post(options)
-    .then(response => parseResponse(response))
-    .then(response => res.json(response))
-    .catch(err => err);
+  res.json(response);
 };
 
 module.exports = getPriceController;
