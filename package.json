@@ -5,12 +5,12 @@
   "main": "./src/bin/index.js",
   "scripts": {
     "lint": "./node_modules/.bin/eslint src/**/*.js",
-    "prepush": "npm run lint",
     "test": "./node_modules/.bin/ava --require babel-register --require babel-polyfill --verbose --fail-fast",
     "test:unit": "./node_modules/.bin/ava --require babel-register --require babel-polyfill --verbose --fail-fast --watch 'test/unit/**/*.test.js'",
     "test:functional": "./node_modules/.bin/ava --require babel-register --require babel-polyfill --verbose --fail-fast --watch 'test/functional/*.test.js'",
     "test:coverage": "nyc npm test",
-    "coveralls": "npm run test:coverage && nyc report --reporter=text-lcov | coveralls"
+    "coveralls": "npm run test:coverage && nyc report --reporter=text-lcov | coveralls",
+    "pre-commit": "npm run lint && npm run test",
   },
   "repository": {
     "type": "git",
