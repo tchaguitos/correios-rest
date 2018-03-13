@@ -2,7 +2,7 @@
 /* eslint-disable no-unused-vars */
 
 import test from 'ava';
-import { mountSearchParams } from '../../../src/utils';
+import { mountSearchParams } from '../../../../src/utils';
 
 test('method `mountSearchParams` exists', (t) => {
   t.truthy(mountSearchParams);

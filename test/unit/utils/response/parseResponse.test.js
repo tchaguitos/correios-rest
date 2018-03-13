@@ -2,7 +2,7 @@
 /* eslint-disable no-unused-vars */
 
 import test from 'ava';
-import { parseResponse } from '../../../src/utils';
+import { parseResponse } from '../../../../src/utils';
 
 test('method `parseResponse` exists', (t) => {
   t.truthy(parseResponse);

@@ -5,7 +5,7 @@ import test from 'ava';
 import sinon from 'sinon';
 import sinonStubPromise from 'sinon-stub-promise';
 
-import { makeRequest } from '../../../src/utils';
+import { makeRequest } from '../../../../src/utils';
 
 sinonStubPromise(sinon);
 

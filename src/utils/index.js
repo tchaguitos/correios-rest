@@ -1,9 +1,13 @@
-const mountSearchParams = require('./mountSearchParams');
-const replaceBrackets = require('./replaceBrackets');
-const parseResponse = require('./parseResponse');
-const makeRequest = require('./makeRequest');
+const mountSearchParams = require('./request/mountSearchParams');
+const makeRequest = require('./request/makeRequest');
+const parseResponse = require('./response/parseResponse');
+const replaceBrackets = require('./string/replaceBrackets');
+const checkIfKeysExists = require('./error/checkIfKeysExists');
+const mountErrorMessage = require('./error/mountErrorMessage');
 
 module.exports = {
+  checkIfKeysExists,
+  mountErrorMessage,
   mountSearchParams,
   replaceBrackets,
   parseResponse,

@@ -1,5 +1,5 @@
 const xml2js = require('xml2js');
-const replaceBrackets = require('./replaceBrackets');
+const replaceBrackets = require('../string/replaceBrackets');
 
 const parser = new xml2js.Parser();
 

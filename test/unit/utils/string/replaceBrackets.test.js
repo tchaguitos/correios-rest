@@ -2,7 +2,7 @@
 /* eslint-disable no-unused-vars */
 
 import test from 'ava';
-import { replaceBrackets } from '../../../src/utils';
+import { replaceBrackets } from '../../../../src/utils';
 
 test('method `replaceBrackets` exists', (t) => {
   t.truthy(replaceBrackets);

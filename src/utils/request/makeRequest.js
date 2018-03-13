@@ -1,6 +1,6 @@
 const axios = require('axios');
 const mountSearchParams = require('./mountSearchParams');
-const parseResponse = require('./parseResponse');
+const parseResponse = require('../response/parseResponse');
 
 const makeRequest = async (url, method, obj) => {
   const data = mountSearchParams(obj);
