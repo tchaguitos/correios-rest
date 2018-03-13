@@ -17,7 +17,7 @@ A ideia é simplificar a vida do desenvolvedor, deixando a responsabilidade de t
 
 ---
 
-### Começando
+### Começando a contribuir
 
 `git clone git@github.com:tchaguitos/correios-services.git`
 
@@ -39,10 +39,26 @@ Depois disso, leia o [manual de contribuição](https://github.com/tchaguitos/co
 
 #### Informações importantes
 
-Até então, o único método implementado é o "CalcPreco". 
+A lista de serviços disponíveis no webservice dos Correios é a abaixo. Os itens marcados já estão implementados.
 
-  - A lista de métodos disponibilizados pelos Correios pode ser encontrada [aqui](http://ws.correios.com.br/calculador/CalcPrecoPrazo.asmx).
-  - [Esse](http://www.correios.com.br/para-voce/correios-de-a-a-z/pdf/calculador-remoto-de-precos-e-prazos/manual-de-implementacao-do-calculo-remoto-de-precos-e-prazos) arquivo pode também ser útil.
+  - [ ] CalcDataMaxima 
+  - [x] CalcPrazo
+  - [ ] CalcPrazoData 
+  - [ ] CalcPrazoObjeto 
+  - [ ] CalcPrazoRestricao 
+  - [x] CalcPreco
+  - [ ] CalcPrecoData 
+  - [ ] CalcPrecoFAC 
+  - [ ] CalcPrecoPrazo 
+  - [ ] CalcPrecoPrazoData 
+  - [ ] CalcPrecoPrazoRestricao 
+  - [ ] ListaServicos
+
+Você pode acompanhar o progresso através das issues e do projeto "correios-services" na aba "projects".
+
+Mais informações referentes aos Serviços você encontra [aqui](http://ws.correios.com.br/calculador/CalcPrecoPrazo.asmx).
+
+[Esse](http://www.correios.com.br/para-voce/correios-de-a-a-z/pdf/calculador-remoto-de-precos-e-prazos/manual-de-implementacao-do-calculo-remoto-de-precos-e-prazos) arquivo pode também ser útil para alguns dos serviços.
   
 
 ---
