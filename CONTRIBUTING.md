@@ -1,14 +1,24 @@
-# Contributing
+# Contribuindo
 
-Please, use [this](https://github.com/pagarme/git-style-guide) styleguide.
+Por favor, use [esse](https://github.com/pagarme/git-style-guide) styleguide para as contribuições.
 
-1. Fork it!
-2. Create your feature branch: `git checkout -b identifier/issue`
-3. Commit your changes: `git commit` and use the editor when writing a commit message
-4. Push to the branch: `git push origin identifier/issue`
+1. Dê um fork!
+2. Crie o seu branch com o comando: 
 
-*Remember that we have a pre-push hook with steps that analyzes and prevents mistakes.*
+  - `git checkout -b identificador/issue-n` 
 
-**After your pull request is merged**, you can safely delete your branch.
+    exemplo: `git checkout -b fix/issue-02`
+
+3. Faça um commit das alterações: 
+
+  - `git commit` 
+  
+    Use o editor para escrever a mensagem e explique bem o que você está fazendo.
+
+4. Dê o push para o seu branch: `git push origin identifier/issue`
+
+*Temos um hook pre-push que verifica se o código está de acordo com o styleguide utilizado e se os testes passaram*. Caso ocorra algum erro, conserte-os antes de repetir o processo.
+
+**Depois que acontecer o merge do seu pull request**, você pode deletar o branch.
 
 ### [<-- Back](https://github.com/tchaguitos/correios-services/)
