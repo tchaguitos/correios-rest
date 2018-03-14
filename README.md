@@ -43,7 +43,7 @@ A lista de serviços disponíveis no webservice dos Correios é a abaixo. Os ite
 
   - [ ] CalcDataMaxima 
   - [x] CalcPrazo
-  - [ ] CalcPrazoData 
+  - [x] CalcPrazoData 
   - [ ] CalcPrazoObjeto 
   - [ ] CalcPrazoRestricao 
   - [x] CalcPreco
