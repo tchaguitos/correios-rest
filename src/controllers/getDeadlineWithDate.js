@@ -1,8 +1,8 @@
 const { makeRequest, checkIfKeysExists, mountErrorMessage } = require('../utils');
 
-const getPriceWithDateController = {};
+const getDeadlineWithDateController = {};
 
-getPriceWithDateController.getPriceWithDate = async (req, res) => {
+getDeadlineWithDateController.getDeadlineWithDate = async (req, res) => {
   const obj = req.body;
 
   const errors = await checkIfKeysExists(obj, ['nCdServico', 'sCepOrigem', 'sCepDestino', 'sDtCalculo']);
@@ -12,5 +12,5 @@ getPriceWithDateController.getPriceWithDate = async (req, res) => {
   return res.json(response);
 };
 
-module.exports = getPriceWithDateController;
+module.exports = getDeadlineWithDateController;
 

@@ -25,7 +25,7 @@ test('get price with date', async (t) => {
   };
 
   const res = await request(app())
-    .post('/v1/price-with-date')
+    .post('/v1/deadline-with-date')
     .send(requestMock)
     .expect('Content-Type', /json/)
     .expect(200);
