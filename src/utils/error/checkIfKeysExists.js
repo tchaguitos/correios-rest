@@ -8,6 +8,8 @@ const checkIfKeysExists = (obj, array) => {
     return errors;
   });
 
+  if (errors.length === 0) return false;
+
   return errors;
 };
 
