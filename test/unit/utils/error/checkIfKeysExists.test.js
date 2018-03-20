@@ -12,14 +12,14 @@ test('method `checkIfKeysExists` is a function', (t) => {
   t.is(typeof checkIfKeysExists, 'function');
 });
 
-test('return `[]` when `checkIfKeysExists(obj, ["a", "b", "c"])`', (t) => {
+test('return `false` when `checkIfKeysExists(obj, ["a", "b", "c"])`', (t) => {
   const obj = {
     a: 1,
     b: 2,
     c: 3,
   };
   const result = checkIfKeysExists(obj, ['a', 'b', 'c']);
-  t.deepEqual(result, []);
+  t.deepEqual(result, false);
 });
 
 test('return `["d"]` when `checkIfKeysExists(obj, ["d"])`', (t) => {
