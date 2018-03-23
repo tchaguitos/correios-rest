@@ -1,6 +1,6 @@
 # Correios Services
 
-[![Build Status](https://travis-ci.org/tchaguitos/correios-services.svg?branch=master)](https://travis-ci.org/tchaguitos/correios-services) [![Coverage Status](https://coveralls.io/repos/github/tchaguitos/correios-services/badge.svg?branch=master)](https://coveralls.io/github/tchaguitos/correios-services?branch=master)
+[![Build Status](https://travis-ci.org/tchaguitos/correios-rest.svg?branch=master)](https://travis-ci.org/tchaguitos/correios-rest) [![Coverage Status](https://coveralls.io/repos/github/tchaguitos/correios-services/badge.svg?branch=master)](https://coveralls.io/github/tchaguitos/correios-services?branch=master)
 
 Uma alternativa simples e fácil para calcular preços e prazos de encomendas dos Correios.  
 
