@@ -9,19 +9,19 @@ test('get price with date', async (t) => {
   const requestMock = {
     nCdServico: '40010',
     sCepOrigem: '37410000',
-    sCepDestino: '37410000',
-    sDtCalculo: `${new Date().getDate()}/0${new Date().getMonth() + 1}/${new Date().getFullYear()}`,
+    sCepDestino: '05311900',
+    sDtCalculo: '20/08/2018',
   };
 
   const responseMock = {
     Codigo: '40010',
     PrazoEntrega: '1',
     EntregaDomiciliar: 'S',
-    EntregaSabado: 'N',
+    EntregaSabado: 'S',
     Erro: '',
     MsgErro: '',
     obsFim: '',
-    DataMaxEntrega: `${new Date().getDate() + 1}/0${new Date().getMonth() + 1}/${new Date().getFullYear()}`,
+    DataMaxEntrega: '21/08/2018',
   };
 
   const res = await request(app())
