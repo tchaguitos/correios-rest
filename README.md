@@ -69,7 +69,7 @@ Para calcular o valor do frete de uma encomenda, basta enviar, através do verbo
   "nCdEmpresa": "",
   "sDsSenha": "",
   "nCdServico": "40010",
-  "sCepOrigem": "37410000",
+  "sCepOrigem": "37410220",
   "sCepDestino": "05311900",
   "nVlPeso": "1",
   "nCdFormato": "1",

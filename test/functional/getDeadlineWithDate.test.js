@@ -8,20 +8,20 @@ import app from '../../src/config/express';
 test('get price with date', async (t) => {
   const requestMock = {
     nCdServico: '40010',
-    sCepOrigem: '37410000',
+    sCepOrigem: '37410220',
     sCepDestino: '05311900',
     sDtCalculo: '20/08/2018',
   };
 
   const responseMock = {
     Codigo: '40010',
-    PrazoEntrega: '1',
+    PrazoEntrega: '2',
     EntregaDomiciliar: 'S',
     EntregaSabado: 'S',
     Erro: '',
     MsgErro: '',
     obsFim: '',
-    DataMaxEntrega: '21/08/2018',
+    DataMaxEntrega: '22/08/2018',
   };
 
   const res = await request(app())

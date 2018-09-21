@@ -8,7 +8,7 @@ import app from '../../src/config/express';
 test('get price', async (t) => {
   const requestMock = {
     nCdServico: '40010',
-    sCepOrigem: '37410000',
+    sCepOrigem: '37410220',
     sCepDestino: '05311900',
   };
 
@@ -20,7 +20,7 @@ test('get price', async (t) => {
     Erro: '',
     MsgErro: '',
     obsFim: '',
-    DataMaxEntrega: `0${new Date().getDate() + 2}/0${new Date().getMonth() + 1}/${new Date().getFullYear()}`,
+    DataMaxEntrega: `${new Date().getDate() + 4}/0${new Date().getMonth() + 1}/${new Date().getFullYear()}`,
   };
 
   const res = await request(app())

@@ -10,7 +10,7 @@ test('get price', async (t) => {
     nCdEmpresa: '',
     sDsSenha: '',
     nCdServico: '40010',
-    sCepOrigem: '37410000',
+    sCepOrigem: '37410220',
     sCepDestino: '05311900',
     nVlPeso: '1',
     nCdFormato: '1',
@@ -25,13 +25,13 @@ test('get price', async (t) => {
 
   const responseMock = {
     Codigo: '40010',
-    Valor: '49,62',
+    Valor: '53,93',
     ValorMaoPropria: '0,00',
     ValorAvisoRecebimento: '0,00',
-    ValorValorDeclarado: '1,22',
+    ValorValorDeclarado: '1,63',
     Erro: '',
     MsgErro: '',
-    ValorSemAdicionais: '48,40',
+    ValorSemAdicionais: '52,30',
   };
 
   const res = await request(app())
