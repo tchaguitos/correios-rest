@@ -1,8 +1,8 @@
 const { makeRequest } = require('../utils');
 
-const calcPrecoController = {};
+const calcPrecoPrazoController = {};
 
-calcPrecoController.getPrice = async (req, res) => {
+calcPrecoPrazoController.calcPrecoPrazo = async (req, res) => {
 
     const obj = {
         nCdEmpresa: req.body.nCdEmpresa,
@@ -21,11 +21,11 @@ calcPrecoController.getPrice = async (req, res) => {
         sCdAvisoRecebimento: req.body.sCdAvisoRecebimento,
     };
     
-    const response = await makeRequest('http://ws.correios.com.br/calculador/CalcPrecoPrazo.asmx/CalcPreco', 'POST', obj);
+    const response = await makeRequest('http://ws.correios.com.br/calculador/CalcPrecoPrazo.asmx/CalcPrecoPrazo', 'POST', obj);
     
     res.json(response);
 
 };
 
-module.exports = calcPrecoController;
+module.exports = calcPrecoPrazoController;
 
