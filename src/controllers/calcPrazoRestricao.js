@@ -1,8 +1,8 @@
 const { makeRequest, checkIfKeysExists, mountErrorMessage } = require('../utils');
 
-const calcPrazoDataController = {};
+const calcPrazoRestricaoController = {};
 
-calcPrazoDataController.calcPrazoData = async (req, res) => {
+calcPrazoRestricaoController.calcPrazoRestricao = async (req, res) => {
 
     const obj = req.body;
     
@@ -10,11 +10,11 @@ calcPrazoDataController.calcPrazoData = async (req, res) => {
 
     if (errors) return res.json(mountErrorMessage(errors));
     
-    const response = await makeRequest('http://ws.correios.com.br/calculador/CalcPrecoPrazo.asmx/CalcPrazoData', 'POST', obj);
+    const response = await makeRequest('http://ws.correios.com.br/calculador/CalcPrecoPrazo.asmx/CalcPrazoRestricao', 'POST', obj);
 
     return res.json(response);
 
 };
 
-module.exports = calcPrazoDataController;
+module.exports = calcPrazoRestricaoController;
 
