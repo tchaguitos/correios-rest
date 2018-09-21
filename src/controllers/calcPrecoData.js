@@ -1,8 +1,8 @@
 const { makeRequest, checkIfKeysExists, mountErrorMessage } = require('../utils');
 
-const getPriceWithDateController = {};
+const calcPrecoDataController = {};
 
-getPriceWithDateController.getPriceWithDate = async (req, res) => {
+calcPrecoDataController.getPriceWithDate = async (req, res) => {
 
     const obj = req.body;
     
@@ -21,5 +21,5 @@ getPriceWithDateController.getPriceWithDate = async (req, res) => {
 
 };
 
-module.exports = getPriceWithDateController;
+module.exports = calcPrecoDataController;
 

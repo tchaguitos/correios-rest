@@ -1,8 +1,8 @@
 const { makeRequest } = require('../utils');
 
-const getDeadlineController = {};
+const calcPrazoController = {};
 
-getDeadlineController.getDeadline = async (req, res) => {
+calcPrazoController.getDeadline = async (req, res) => {
   const obj = {
     nCdServico: req.body.nCdServico,
     sCepOrigem: req.body.sCepOrigem,
@@ -14,5 +14,5 @@ getDeadlineController.getDeadline = async (req, res) => {
   res.json(response);
 };
 
-module.exports = getDeadlineController;
+module.exports = calcPrazoController;
 

@@ -5,12 +5,11 @@ import test from 'ava';
 import request from 'supertest';
 import app from '../../src/config/express';
 
-test('get price with date', async (t) => {
+test('CalcPrazo', async (t) => {
   const requestMock = {
     nCdServico: '40010',
     sCepOrigem: '37410220',
     sCepDestino: '05311900',
-    sDtCalculo: '20/08/2018',
   };
 
   const responseMock = {
@@ -21,11 +20,11 @@ test('get price with date', async (t) => {
     Erro: '',
     MsgErro: '',
     obsFim: '',
-    DataMaxEntrega: '22/08/2018',
+    DataMaxEntrega: `${new Date().getDate() + 4}/0${new Date().getMonth() + 1}/${new Date().getFullYear()}`,
   };
 
   const res = await request(app())
-    .post('/v1/deadline-with-date')
+    .post('/v1/calc-prazo')
     .send(requestMock)
     .expect('Content-Type', /json/)
     .expect(200);

@@ -5,7 +5,7 @@ import test from 'ava';
 import request from 'supertest';
 import app from '../../src/config/express';
 
-test('get price', async (t) => {
+test('CalcPreco', async (t) => {
   const requestMock = {
     nCdEmpresa: '',
     sDsSenha: '',
@@ -35,7 +35,7 @@ test('get price', async (t) => {
   };
 
   const res = await request(app())
-    .post('/v1/price')
+    .post('/v1/calc-preco')
     .send(requestMock)
     .expect('Content-Type', /json/)
     .expect(200);

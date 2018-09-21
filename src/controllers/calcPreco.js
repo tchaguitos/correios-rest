@@ -1,8 +1,8 @@
 const { makeRequest } = require('../utils');
 
-const getPriceController = {};
+const calcPrecoController = {};
 
-getPriceController.getPrice = async (req, res) => {
+calcPrecoController.getPrice = async (req, res) => {
   const obj = {
     nCdEmpresa: req.body.nCdEmpresa,
     sDsSenha: req.body.sDsSenha,
@@ -25,5 +25,5 @@ getPriceController.getPrice = async (req, res) => {
   res.json(response);
 };
 
-module.exports = getPriceController;
+module.exports = calcPrecoController;
 
