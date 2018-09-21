@@ -48,7 +48,7 @@ A lista de serviços disponíveis no webservice dos Correios é a abaixo. Os ite
   - [x] CalcPrecoData 
   - [ ] CalcPrecoFAC 
   - [x] CalcPrecoPrazo 
-  - [ ] CalcPrecoPrazoData 
+  - [x] CalcPrecoPrazoData 
   - [ ] CalcPrecoPrazoRestricao 
   - [ ] ListaServicos
 
