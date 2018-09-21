@@ -2,7 +2,7 @@ const { makeRequest } = require('../utils');
 
 const calcPrazoController = {};
 
-calcPrazoController.getDeadline = async (req, res) => {
+calcPrazoController.calcPrazo = async (req, res) => {
   const obj = {
     nCdServico: req.body.nCdServico,
     sCepOrigem: req.body.sCepOrigem,

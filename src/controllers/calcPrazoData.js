@@ -2,7 +2,7 @@ const { makeRequest, checkIfKeysExists, mountErrorMessage } = require('../utils'
 
 const calcPrazoDataController = {};
 
-calcPrazoDataController.getDeadlineWithDate = async (req, res) => {
+calcPrazoDataController.calcPrazoData = async (req, res) => {
   const obj = req.body;
 
   const errors = await checkIfKeysExists(obj, ['nCdServico', 'sCepOrigem', 'sCepDestino', 'sDtCalculo']);

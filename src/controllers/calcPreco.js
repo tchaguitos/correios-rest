@@ -2,7 +2,7 @@ const { makeRequest } = require('../utils');
 
 const calcPrecoController = {};
 
-calcPrecoController.getPrice = async (req, res) => {
+calcPrecoController.calcPreco = async (req, res) => {
 
     const obj = {
         nCdEmpresa: req.body.nCdEmpresa,
