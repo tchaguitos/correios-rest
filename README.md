@@ -41,10 +41,8 @@ Depois disso, leia o [manual de contribuição](https://github.com/tchaguitos/co
 
 A lista de serviços disponíveis no webservice dos Correios é a abaixo. Os itens marcados já estão implementados.
 
-  - [ ] CalcDataMaxima 
   - [x] CalcPrazo
   - [x] CalcPrazoData 
-  - [ ] CalcPrazoObjeto 
   - [ ] CalcPrazoRestricao 
   - [x] CalcPreco
   - [x] CalcPrecoData 
