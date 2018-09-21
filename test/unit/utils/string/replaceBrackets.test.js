@@ -5,14 +5,14 @@ import test from 'ava';
 import { replaceBrackets } from '../../../../src/utils';
 
 test('method `replaceBrackets` exists', (t) => {
-  t.truthy(replaceBrackets);
+    t.truthy(replaceBrackets);
 });
 
 test('method `replaceBrackets` is a function', (t) => {
-  t.is(typeof replaceBrackets, 'function');
+    t.is(typeof replaceBrackets, 'function');
 });
 
 test('return `abcde` when `replaceBrackets("a[b]c[]de")`', (t) => {
-  const result = replaceBrackets('a[b]c[]de');
-  t.is(result, 'abcde');
+    const result = replaceBrackets('a[b]c[]de');
+    t.is(result, 'abcde');
 });

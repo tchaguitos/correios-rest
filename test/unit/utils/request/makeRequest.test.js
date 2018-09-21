@@ -10,9 +10,9 @@ import { makeRequest } from '../../../../src/utils';
 sinonStubPromise(sinon);
 
 test('method `makeRequest` exists', (t) => {
-  t.truthy(makeRequest);
+    t.truthy(makeRequest);
 });
 
 test('method `makeRequest` is a function', (t) => {
-  t.is(typeof makeRequest, 'function');
+    t.is(typeof makeRequest, 'function');
 });
