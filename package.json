@@ -1,53 +1,57 @@
 {
-  "name": "correios-services",
-  "version": "0.1.0",
-  "description": "",
-  "main": "./src/bin/index.js",
-  "scripts": {
-    "lint": "./node_modules/.bin/eslint src/**/*.js",
-    "test": "./node_modules/.bin/ava --require babel-register --require babel-polyfill --verbose --fail-fast",
-    "test:unit": "./node_modules/.bin/ava --require babel-register --require babel-polyfill --verbose --fail-fast --watch 'test/unit/**/*.test.js'",
-    "test:functional": "./node_modules/.bin/ava --require babel-register --require babel-polyfill --verbose --fail-fast --watch 'test/functional/*.test.js'",
-    "test:coverage": "nyc npm test",
-    "coveralls": "npm run test:coverage && nyc report --reporter=text-lcov | coveralls",
-    "pre-commit": "npm run lint && npm run test"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+ssh://git@github.com/tchaguitos/correios-services.git"
-  },
-  "author": "Thiago Brasil <tchaguitos@gmail.com>",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/tchaguitos/correios-services/issues"
-  },
-  "homepage": "https://github.com/tchaguitos/correios-services#readme",
-  "babel": {
-    "presets": [
-      "env"
-    ]
-  },
-  "dependencies": {
-    "axios": "^0.18.0",
-    "body-parser": "^1.18.2",
-    "consign": "^0.1.6",
-    "cors": "^2.8.4",
-    "express": "^4.16.1",
-    "xml2js": "^0.4.19"
-  },
-  "devDependencies": {
-    "ava": "^1.0.0-beta.3",
-    "babel-polyfill": "^6.26.0",
-    "babel-preset-env": "^1.6.1",
-    "babel-register": "^6.26.0",
-    "eslint": "^4.18.1",
-    "eslint-config-airbnb-base": "^12.1.0",
-    "eslint-plugin-import": "^2.9.0",
-    "husky": "^0.15.0-rc.8",
-    "nodemon": "^1.15.1",
-    "nyc": "^11.4.1",
-    "sinon": "^4.4.2",
-    "sinon-stub-promise": "^4.0.0",
-    "supertest": "^3.0.0"
-  }
+    "name": "correios-services",
+    "version": "0.1.0",
+    "description": "",
+    "main": "./src/bin/index.js",
+    "engines": {
+        "node": "~8.12.0",
+        "npm": "~6.4.1"
+    },
+    "scripts": {
+        "lint": "./node_modules/.bin/eslint src/**/*.js",
+        "test": "./node_modules/.bin/ava --require babel-register --require babel-polyfill --verbose --fail-fast",
+        "test:unit": "./node_modules/.bin/ava --require babel-register --require babel-polyfill --verbose --fail-fast --watch 'test/unit/**/*.test.js'",
+        "test:functional": "./node_modules/.bin/ava --require babel-register --require babel-polyfill --verbose --fail-fast --watch 'test/functional/*.test.js'",
+        "test:coverage": "nyc npm test",
+        "coveralls": "npm run test:coverage && nyc report --reporter=text-lcov | coveralls",
+        "pre-commit": "npm run lint && npm run test"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+ssh://git@github.com/tchaguitos/correios-services.git"
+    },
+    "author": "Thiago Brasil <tchaguitos@gmail.com>",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/tchaguitos/correios-services/issues"
+    },
+    "homepage": "https://github.com/tchaguitos/correios-services#readme",
+    "babel": {
+        "presets": [
+            "env"
+        ]
+    },
+    "dependencies": {
+        "axios": "^0.18.0",
+        "body-parser": "^1.18.2",
+        "consign": "^0.1.6",
+        "cors": "^2.8.4",
+        "express": "^4.16.1",
+        "xml2js": "^0.4.19"
+    },
+    "devDependencies": {
+        "ava": "^1.0.0-beta.3",
+        "babel-polyfill": "^6.26.0",
+        "babel-preset-env": "^1.6.1",
+        "babel-register": "^6.26.0",
+        "eslint": "^4.18.1",
+        "eslint-config-airbnb-base": "^12.1.0",
+        "eslint-plugin-import": "^2.9.0",
+        "husky": "^0.15.0-rc.8",
+        "nodemon": "^1.15.1",
+        "nyc": "^11.4.1",
+        "sinon": "^4.4.2",
+        "sinon-stub-promise": "^4.0.0",
+        "supertest": "^3.0.0"
+    }
 }
