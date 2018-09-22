@@ -41,17 +41,15 @@ Depois disso, leia o [manual de contribuição](https://github.com/tchaguitos/co
 
 A lista de serviços disponíveis no webservice dos Correios é a abaixo. Os itens marcados já estão implementados.
 
-  - [ ] CalcDataMaxima 
   - [x] CalcPrazo
   - [x] CalcPrazoData 
-  - [ ] CalcPrazoObjeto 
-  - [ ] CalcPrazoRestricao 
+  - [x] CalcPrazoRestricao 
   - [x] CalcPreco
-  - [x] CalcPrecoData 
+  - [x] CalcPrecoData
   - [ ] CalcPrecoFAC 
-  - [ ] CalcPrecoPrazo 
-  - [ ] CalcPrecoPrazoData 
-  - [ ] CalcPrecoPrazoRestricao 
+  - [x] CalcPrecoPrazo 
+  - [x] CalcPrecoPrazoData 
+  - [x] CalcPrecoPrazoRestricao 
   - [ ] ListaServicos
 
 Você pode acompanhar o progresso através das issues e do projeto "correios-services" na aba "projects".
@@ -69,7 +67,7 @@ Para calcular o valor do frete de uma encomenda, basta enviar, através do verbo
   "nCdEmpresa": "",
   "sDsSenha": "",
   "nCdServico": "40010",
-  "sCepOrigem": "37410000",
+  "sCepOrigem": "37410220",
   "sCepDestino": "05311900",
   "nVlPeso": "1",
   "nCdFormato": "1",
