@@ -22,7 +22,7 @@ test('CalcPrecoData', async (t) => {
         sCdMaoPropria: 'n',
         nVlValorDeclarado: '150',
         sCdAvisoRecebimento: 'n',
-        sDtCalculo: `${new Date().getDate()}/0${new Date().getMonth() + 1}/${new Date().getFullYear()}`,
+        sDtCalculo: `${new Date().getDate()}/${new Date().getMonth() + 1}/${new Date().getFullYear()}`,
     };
     
     const responseMock = {

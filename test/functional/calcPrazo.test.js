@@ -21,7 +21,7 @@ test('CalcPrazo', async (t) => {
         Erro: '',
         MsgErro: '',
         obsFim: '',
-        DataMaxEntrega: `${new Date().getDate() + 3}/0${new Date().getMonth() + 1}/${new Date().getFullYear()}`,
+        DataMaxEntrega: `${new Date().getDate() + 2}/${new Date().getMonth() + 1}/${new Date().getFullYear()}`,
     };
     
     const res = await request(app())
