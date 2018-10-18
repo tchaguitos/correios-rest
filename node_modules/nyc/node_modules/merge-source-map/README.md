@@ -1,6 +1,7 @@
 # merge-source-map
 
 [![npm-version](https://img.shields.io/npm/v/merge-source-map.svg?style=flat-square)](https://npmjs.org/package/merge-source-map)
+[![downloads](http://img.shields.io/npm/dm/merge-source-map.svg?style=flat-square)](https://npmjs.org/package/merge-source-map)
 [![travis-ci](https://img.shields.io/travis/keik/merge-source-map.svg?style=flat-square)](https://travis-ci.org/keik/merge-source-map)
 [![Coverage Status](https://img.shields.io/coveralls/keik/merge-source-map.svg?style=flat-square)](https://coveralls.io/github/keik/merge-source-map)
 

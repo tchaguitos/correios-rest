@@ -1,7 +1,7 @@
 'use strict';
-var md5OMatic = require('md5-o-matic');
+const md5OMatic = require('md5-o-matic');
 
-module.exports = function (input) {
+module.exports = input => {
 	if (Array.isArray(input)) {
 		input = input.join('');
 	}

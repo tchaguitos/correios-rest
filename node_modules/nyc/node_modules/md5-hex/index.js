@@ -1,11 +1,11 @@
 'use strict';
-var crypto = require('crypto');
+const crypto = require('crypto');
 
 module.exports = function (input) {
-	var hash = crypto.createHash('md5');
+	const hash = crypto.createHash('md5');
 
-	var update = function (buf) {
-		var inputEncoding = typeof buf === 'string' ? 'utf8' : undefined;
+	const update = buf => {
+		const inputEncoding = typeof buf === 'string' ? 'utf8' : undefined;
 		hash.update(buf, inputEncoding);
 	};
 

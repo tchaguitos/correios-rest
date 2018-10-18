@@ -4,6 +4,8 @@
 
 *Please don't use MD5 hashes for anything sensitive!*
 
+Works in the browser too, when used with browserify/webpack.
+
 Checkout [`hasha`](https://github.com/sindresorhus/hasha) if you need something more flexible.
 
 
@@ -32,7 +34,7 @@ md5Hex(buffer);
 
 #### input
 
-Type: `buffer` `string` `array[string|buffer]`
+Type: `Buffer` `string` `Buffer[]` `string[]`
 
 Prefer buffers as they're faster to hash, but strings can be useful for small things.
 
