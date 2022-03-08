@@ -32,7 +32,7 @@
         ]
     },
     "dependencies": {
-        "axios": "^0.18.0",
+        "axios": "^0.26.0",
         "body-parser": "^1.18.2",
         "consign": "^0.1.6",
         "cors": "^2.8.4",
@@ -40,18 +40,18 @@
         "xml2js": "^0.4.19"
     },
     "devDependencies": {
-        "ava": "^1.0.0-rc.1",
+        "ava": "^4.1.0",
         "babel-polyfill": "^6.26.0",
         "babel-preset-env": "^1.6.1",
         "babel-register": "^6.26.0",
-        "eslint": "^4.18.1",
+        "eslint": "^8.10.0",
         "eslint-config-airbnb-base": "^12.1.0",
         "eslint-plugin-import": "^2.9.0",
         "husky": "^0.15.0-rc.8",
-        "nodemon": "^1.18.4",
-        "nyc": "^13.1.0",
+        "nodemon": "^2.0.15",
+        "nyc": "^15.1.0",
         "sinon": "^4.4.2",
         "sinon-stub-promise": "^4.0.0",
-        "supertest": "^3.0.0"
+        "supertest": "^6.2.2"
     }
 }
